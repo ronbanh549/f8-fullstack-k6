@@ -19,4 +19,4 @@ function nextPrimePalindrome(n) {
   }
 }
 
-console.log(nextPrimePalindrome(401));
+console.log(nextPrimePalindrome(302));
