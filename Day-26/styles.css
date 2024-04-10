@@ -38,7 +38,7 @@ ol {
 }
 
 .modal-auth .overlay {
-  background: #00000052;
+  background: #00000077;
   position: fixed;
   inset: 0;
 }
@@ -109,4 +109,28 @@ ol {
 
 .msg {
   color: red;
+}
+
+.modal-auth .login-form .password-field {
+  position: relative;
+}
+
+.show-password {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.show-password svg:first-child {
+  display: none;
+}
+.show-password.hide svg:first-child {
+  display: block;
+}
+.show-password.hide svg + svg {
+  display: none;
 }
