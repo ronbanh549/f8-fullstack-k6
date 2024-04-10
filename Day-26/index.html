@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a href="#" class="open-login">Đăng nhập</a>
+
+    <div class="modal-auth">
+      <div class="modal-dialog">
+        <nav class="tab-nav">
+          <ul>
+            <li><a href="#login" class="active">Đăng nhập</a></li>
+            <li><a href="#register">Đăng ký</a></li>
+          </ul>
+        </nav>
+        <div class="tab-content">
+          <div class="tab-panel active" id="login"></div>
+          <form action="" class="login-form">
+            <div class="msg"></div>
+            <div class="form-group">
+              <label for="">Email:</label>
+              <input
+                type="text"
+                class="field-item email"
+                placeholder="Email..."
+              />
+              <span class="error"></span>
+            </div>
+            <div class="form-group">
+              <label for="">Mật khẩu:</label>
+              <input
+                type="password"
+                class="field-item password"
+                placeholder="Password..."
+              />
+              <span class="error"></span>
+            </div>
+            <button type="submit" class="btn">Đăng nhập</button>
+          </form>
+          <div class="tab-panel" id="register"></div>
+        </div>
+      </div>
+
+      <!-- Overlay -->
+      <div class="overlay"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
