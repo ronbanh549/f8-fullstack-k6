@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        outline: 0;
+      }
+
+      .container {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      .player {
+        display: flex;
+      }
+
+      .play-btn {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-size: 2rem;
+        cursor: pointer;
+      }
+
+      .progress-bar {
+        width: 100%;
+        position: relative;
+        height: 20px;
+        background: gray;
+        margin: 0 20px;
+        cursor: pointer;
+      }
+
+      .progress-bar:hover {
+        background: greenyellow;
+      }
+
+      .progress-bar .progress {
+        position: absolute;
+        background: red;
+        top: 0;
+        left: 0;
+        bottom: 0;
+      }
+
+      .progress-bar .progress span {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        bottom: 0;
+        width: 25px;
+        height: 25px;
+        display: block;
+        border-radius: 50%;
+        background: blueviolet;
+        translate: 50% -50%;
+      }
+
+      .progress-bar .time-preview {
+        position: absolute;
+        top: 0;
+        translate: -50% -110%;
+        background: black;
+        color: #fff;
+        font-size: 0.8rem;
+        padding: 2px 5px;
+        display: none;
+      }
+
+      .progress-bar .time-preview.show {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="play-btn">
+        <i class="fa-solid fa-play"></i>
+      </div>
+      <div class="player">
+        <span>00:00</span>
+        <div class="progress-bar">
+          <div class="progress">
+            <span></span>
+          </div>
+          <span class="time-preview">00:00</span>
+        </div>
+        <span>00:00</span>
+      </div>
+    </div>
+    <audio class="audio" src="./mp3/Quá Sớm _ Low G _ Rap Nhà Làm.mp3"></audio>
+    <script src="main.js"></script>
+  </body>
+</html>
