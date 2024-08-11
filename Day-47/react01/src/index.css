@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.header-input:focus + label {
+  font-size: 12px;
+  top: 0;
+  background: #fff;
+}
